@@ -120,16 +120,16 @@ if (num<0) {
     console.log("Number has to be above 0")
 } else if (num<=10) {
     console.log("Total price will be " + (num*firstprice) + "€")
-} else if (num<=20 && num>10) {
-    console.log("Total price will be " + (10*firstprice + (num-10)*secondprice) + "€")
-} else if (num>20) {
-    console.log("Total price will be " + (10*firstprice + 10*secondprice + (num-20)*thirdprice + "€"))
+} else if (num<=30 && num>10) {
+    console.log("Total price will be " + (10*firstprice + (num-20)*secondprice) + "€")
+} else if (num>30) {
+    console.log("Total price will be " + (10*firstprice + 20*secondprice + (num-30)*thirdprice + "€"))
 }*/
 
 
 // __________LOOPS__________
 
-num = parseInt((prompt("please give a number: ")));
+//num = parseInt((prompt("please give a number: ")));
 
 /*console.log("Numbers between 1 and your number are :")
 for (let i=2; i<num; i++) {
@@ -146,7 +146,200 @@ for (let i=-(num-1); i<num; i++) {
     console.log(i)
 }*/
 
-console.log("Odd numbers between 1 and your number are:")
+/*console.log("Odd numbers between 1 and your number are:")
 for (let i=3; i<num; i=i+2) {
     console.log(i)
+}*/
+
+//perfect number
+/*num = parseInt((prompt("please give a number: ")));
+let sumDiv = 0
+//numDiv = parseInt((prompt("please give a diviser: ")));
+for (i=1; i<num; i++) {
+    if (num%i==0) {
+    sumDiv= sumDiv+i
+    //console.log( i + " + divisor")
+} else {
+    //console.log( i + " + not divisor")
+}}
+console.log(sumDiv)
+
+if (sumDiv==num) {
+    console.log("perfect number")
+} else {
+    console.log("not perfect number")
+}*/
+
+
+// __________ARRAYS__________
+
+
+//Add values to an array
+/*let add_value = (prompt("What would you want to add to the array? "));
+const array1 = new Array()
+array1.push(add_value)
+
+while (add_value!==null) {
+    console.log(array1)
+    add_value = (prompt("What would you want to add to the array? "));
+    array1.push(add_value)
+}*/
+
+//Maximum of an array
+/*let array2 = [(Math.floor(Math.random()*100)),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)]
+console.log(array2)
+console.log("the maximum number is " + Math.max(array2[0],array2[1],array2[2],array2[3],array2[4],))*/
+
+//Minimim of an array
+/*let array3 = [(Math.floor(Math.random()*100)),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)]
+console.log(array3)
+console.log("the minimum number is " + Math.min(array3[0],array3[1],array3[2],array3[3],array3[4],))*/
+
+//Ascending array
+/*let array4 = [(Math.floor(Math.random()*100)),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)]
+console.log(array4)
+let score = 0
+let ascending = false
+for (i=0; i<(array4.length)-1; i++) {
+    if (array4[i]<array4[i+1]) {
+        score++
+    } else {
+        score
+    }
 }
+if (score==4) {
+    ascending=true
+} else {
+    ascending=false
+}
+
+console.log("the final score is " + score + ", the answer is " + ascending)*/
+
+//this code gives us a true or a false for each comparison
+/*for (i=0; i<(array4.length)-1; i++) {
+    if (array4[i]<array4[i+1]) {
+        console.log("true")
+    } else {
+        console.log("false")
+    }
+}*/
+
+
+// __________FUNCTIONS__________
+
+//VAT 
+/*price = parseInt((prompt("What is the price (VAT-excl.) ? ")));
+
+function vat(price) {
+    return (price + (price*21/100))
+}
+console.log(vat(price))*/
+
+//HOW TO CREATE A RANDOM ARRAY OF RANDOM DICE THROWS
+/*let diceLength=Math.floor(Math.random() * 10 +1);
+let arrayDice = []
+
+for (i=0; i<diceLength; i++) {
+    arrayDice.push(Math.floor(Math.random() * 6 +1))
+}*/
+
+// Identical dice
+/*let dice1=Math.floor(Math.random() * 6 +1); 
+let dice2=Math.floor(Math.random() * 6 +1); 
+let dice3=Math.floor(Math.random() * 6 +1);
+
+console.log("The three dice are " + dice1 + ", " + dice2 + " and " + dice3 )
+
+const ident = (a, b, c) => {
+    for (i=0; i<3; i++)
+    if (dice1 == dice2 && dice1 == dice3) {
+        return "The three are identical"
+    } else if (dice1 == dice2 || dice1 == dice3 || dice2 == dice3) {
+        return "Two are identical"
+    } else {
+        return "They are not identical"
+    }
+}
+console.log(ident(dice1, dice2, dice3))*/
+
+
+// EXERCISE LOOP THROW DICE
+/*let numthrow = parseInt((prompt("how many times do you want to throw the dice? ")));
+let impNumber = parseInt((prompt("Which number (from 1 to 6) do you want to focus on? ")));
+let NumImpNum = 0
+
+let arrayDice2 = []
+for (i=0; i<numthrow; i++) {
+    arrayDice2.push(Math.floor(Math.random() * 6 +1))
+}
+console.log("Your result is " + arrayDice2)
+
+const howManyImpNumber = (numthrow, impNumber) => {
+    for (i=0; i<arrayDice2.length; i++) {
+        if (arrayDice2[i] == impNumber) {
+            NumImpNum++
+        }
+    }
+    return NumImpNum
+}
+
+console.log(howManyImpNumber(numthrow, impNumber))*/
+
+//PERFECT NUMBER IN FUNCTION
+
+/*num = parseInt((prompt("please give a number: ")));
+let sumDiv = 0
+
+const isPerfectNumber = (num) => {
+    for (i=1; i<num; i++) {
+        if (num%i==0) {
+        sumDiv= sumDiv+i
+        }
+    }
+    if (sumDiv==num) {
+        return "Perfect Number"
+    } else {
+        return "not perfect number"
+    }
+}
+
+console.log(isPerfectNumber(num))*/
+
+//ORDERED ARRAY
+/*let array4 = [(Math.floor(Math.random()*100)),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)]
+
+console.log(array4)
+const isSmaller = (currentValue, index, array) => {
+    if(index === array.length - 1){
+        return true
+    }else{
+       return currentValue < array[index + 1];
+    }
+}
+
+console.log(array4.every(isSmaller));*/
+
+
+
+
+// __________STRINGS__________
+
+//EXERCISE 1: CONCATENATION
+//Two strings that are put together in one string
+
+/*string1 = prompt("What do you want to write? ");
+string2 = prompt("What else do you want to write? ");
+
+console.log(string1 +" "+ string2)*/
+
+//EXERCISE 2: LOWERCASE
+/*string3 = prompt("What do you want to write? (In uppercase) ");
+console.log(string3.toLowerCase())*/
+
+//EXERCISE 3: UPPERCASE
+string4 = prompt("What do you want to write? (In lowercase) ");
+//console.log(string4.toUpperCase())
+const changeToUpper (string) =>
+    for (i=1; i < string.length ; i++) {
+        if //is lowercase -> change it to upper
+    }
