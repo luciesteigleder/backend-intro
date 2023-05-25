@@ -337,9 +337,28 @@ console.log(string1 +" "+ string2)*/
 console.log(string3.toLowerCase())*/
 
 //EXERCISE 3: UPPERCASE
-string4 = prompt("What do you want to write? (In lowercase) ");
-//console.log(string4.toUpperCase())
-const changeToUpper (string) =>
-    for (i=1; i < string.length ; i++) {
-        if //is lowercase -> change it to upper
-    }
+/*string4 = prompt("What do you want to write? ");
+const changeToUpper = (string) => {
+    return string.toUpperCase()
+}
+
+console.log(changeToUpper(string4))*/
+
+//EXERCISE 4: CHANGE OF NAME FORMAT
+/*let name = prompt("What is your name? (in the John, Doe format)")
+
+let name2Array = name.split(", ")
+console.log(name2Array)
+let name2 = name2Array.reverse().join(" ")
+console.log(name2)*/
+
+//EXERCISE 5: NO SPACE
+let string5 = "Hello, the sky is blue and the sun is shining today"
+
+const toNoSpace = (string) => {
+    string = string.split(" ").join("")
+    return string
+}
+/*let string5Array = string5.split (" ")
+let string5NoSpace = string5Array.join("")*/
+console.log(toNoSpace(string5))
