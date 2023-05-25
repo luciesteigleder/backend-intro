@@ -353,12 +353,10 @@ let name2 = name2Array.reverse().join(" ")
 console.log(name2)*/
 
 //EXERCISE 5: NO SPACE
-let string5 = "Hello, the sky is blue and the sun is shining today"
+/*let string5 = "Hello, the sky is blue and the sun is shining today"
 
 const toNoSpace = (string) => {
     string = string.split(" ").join("")
     return string
 }
-/*let string5Array = string5.split (" ")
-let string5NoSpace = string5Array.join("")*/
-console.log(toNoSpace(string5))
+console.log(toNoSpace(string5))*/
